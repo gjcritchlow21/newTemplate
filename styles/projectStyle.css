@@ -1,0 +1,59 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to bottom right, navy, slategrey, violet);
+
+}
+
+#gridContainer {
+  display: grid;
+  width: 95vw;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr 2fr 3fr 3fr;
+  grid-gap: 1rem;
+  grid-template-areas:
+    "header header header header"
+    "sidebar content1 content2 content2"
+    "sidebar content3 content3 content3"
+    "footer footer footer footer";
+}
+/*---------Header----------*/
+.header {
+  grid-area: header;
+  text-align: center;
+}
+#navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.navLinks {
+  text-decoration: none;
+  color: black;
+}
+
+/*---------------SideBar----------*/
+.sidebar {
+  grid-area: sidebar;
+}
+
+.content1 {
+  grid-area: content1;
+}
+.content2 {
+  grid-area: content2;
+}
+.content3 {
+  grid-area: content3;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.item {
+    color: white;
+  background-color: rgba(0,0,0,.7);
+}

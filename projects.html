@@ -1,12 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles/projectStyle.css" rel="stylesheet" type="text/css" />
     <title>My Projects!</title>
-</head>
-<body>
-    <h1>My Projects!</h1>
-</body>
+  </head>
+  <body>
+    <div id="gridContainer">
+      <div class="item header">
+        <h1>Hello World!</h1>
+
+        <div id="navBar">
+          <a class="navLinks" href="index.html"><h3>Home</h3></a>
+          <a class="navLinks" href="aboutMe.html"><h3>About Me</h3></a>
+          <a class="navLinks" href="contactMe.html"><h3>Contact Me</h3></a>
+        </div>
+      </div>
+
+      <div class="item sidebar">
+        <button type="button" id="presto">Presto...</button>
+        <button type="button" id="abra">Abra...</button>
+        <button type="button" id="blowup">Uh Oh</button>
+      </div>
+
+      <div class="item content1" id="colorChange">
+        <button type="button" id="changeButton">Change Color</button>
+      </div>
+      <div class="item content2">Con 2</div>
+
+
+
+
+
+      <div class="item content3">
+
+        <div id="ticketTaker">
+          <form id="inputForm" method="POST">
+            <h3>Sign your name and get your Ticket!</h3>
+            <input
+              id="userName"
+              type="text"
+              name="name"
+              placeholder="Name Please"
+            />
+            <button id="ticketButton" type="submit">Take Your Ticket</button>
+          </form>
+        </div>
+        
+        <div id="nameDisplay">
+          <h3>Ticket Order:</h3>
+          <div id="ticketOrder"></div>
+        </div>
+
+      </div>
+
+
+
+
+      <div class="item footer">footer</div>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>

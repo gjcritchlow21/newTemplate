@@ -1,17 +1,13 @@
 body {
-  background-color: aqua;
+  background-image: linear-gradient(to bottom right, navy, slategrey, violet);
   text-align: center;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-
 }
 
 /* -------Header and Page Nav---------- */
-#header {
-  background-color: crimson;
-}
 
 #navBar {
   display: flex;
@@ -19,43 +15,36 @@ body {
   justify-content: space-around;
 }
 
-.navLinks{
-    text-decoration: none;
-    color: black;
+.navLinks {
+  text-decoration: none;
+  color: black;
 }
 
 /* -----------Body Content------------- */
-#contentWrapper{
-    background-color: blueviolet;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height: 60vh;
+#contentWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 60vh;
 }
 
-#mainWrapper{
-    background-color: chartreuse;
-    width: 60vw;
+#mainWrapper {
+  width: 60vw;
 }
 
-#sideBar{
-    background-color: darkcyan;
-    width: 30vw;
+#sideBar {
+  width: 30vw;
 }
 
 /*-----------Footer---------------*/
-#footer {
-  background-color: deeppink;
-}
 
-#iconWrapper{
-
+#iconWrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-.iconLinks{
+.iconLinks {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -65,6 +54,6 @@ body {
   height: 15vh;
 }
 
-.icon{
+.icon {
   width: 45px;
 }
